@@ -22,7 +22,7 @@
             border-top-color: teal;
             left: 0;
             bottom: 0;
-            position: absolute;
+            position: relative;
         }
 
         .margin {
@@ -43,6 +43,17 @@
         nav {
             background-color: goldenrod
         }
+
+        .submit:hover
+        {
+            background-color: goldenrod;
+            cursor: pointer;
+        }
+
+        .submit
+        {
+            background-color: teal;
+        }
     </style>
 </head>
 
@@ -61,8 +72,8 @@
             </ul>
         </div>
     </nav>
-    <div class="container col-md-5 margin" style="background-color:lightgray">
-
+    <div class="container col-md-5 margin contact-form background-image" style="background:transparent">
+        
             <h2 class="h1-responsive font-weight-bold my-4 navStyle">Contact</h2>
 
             <hr>
@@ -94,17 +105,22 @@
                     </div>
                  </div>
             </div>
+            
+            <br>
 
-            <div class="text-center text-md-left py-3">
-                <a class="btn text-black" onclick="document.getElementById('contact-form').submit();">Submit</a>
-            </div>
+            <input type="submit" class="form-control submit font-weight-bold" value="Submit">
+             
+
         <div class="status"></div>
     </div>
 
 
     <footer class="row">
+            
         <div class="card-footer text-center bg-secondary text-sm col-md-12 font text-white footer">
-            @Copyright
+            This page has been brought to you by Ryan Simpkins
+            <br>
+            @Copyright 2020
         </div>
     </footer>
     </div>
